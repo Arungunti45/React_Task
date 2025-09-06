@@ -1,0 +1,236 @@
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.feature-card {
+  position: relative;
+  height: 65vh;
+  border-radius: 16px;
+  padding: 24px 32px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-label {
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  opacity: 0.8;
+}
+
+.feature-card b {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  max-width: 250px;
+  max-height: 140px;
+  object-fit: contain;
+  margin-top: auto;
+}
+
+.card-back-image {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin: 0 0 12px 0;
+}
+
+p {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: inherit;
+}
+
+.learn-more-link {
+  font-size: 14px;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.toggle-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  color: #1676f3;
+}
+
+.toggle-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.close-btn {
+  color: #555;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Large screens / laptops (<1200px) */
+@media (max-width: 1200px) {
+  .feature-card {
+    padding: 22px 28px;
+    height: 60vh;
+  }
+  .feature-card b {
+    font-size: 17px;
+  }
+  .card-image {
+    max-width: 220px;
+    max-height: 130px;
+  }
+  .card-back-image {
+    max-height: 150px;
+  }
+}
+
+/* Medium screens / tablets (<992px) */
+@media (max-width: 992px) {
+  .features-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 20px 24px;
+    height: auto;
+  }
+  .feature-card b {
+    font-size: 16px;
+  }
+  .card-image {
+    max-width: 200px;
+    max-height: 120px;
+  }
+  .card-back-image {
+    max-height: 140px;
+  }
+}
+
+/* Large mobiles / small tablets (<768px) */
+@media (max-width: 768px) {
+   .features-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 18px 20px;
+  }
+  .feature-card b {
+    font-size: 15px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .card-image {
+    max-width: 180px;
+    max-height: 100px;
+  }
+  .card-back-image {
+    max-height: 120px;
+  }
+  .toggle-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 22px;
+    bottom: 18px;
+    right: 18px;
+  }
+}
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+   .features-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 16px 16px;
+  }
+  .feature-card b {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12.5px;
+  }
+  .card-image {
+    max-width: 160px;
+    max-height: 90px;
+  }
+  .card-back-image {
+    max-height: 100px;
+  }
+  .toggle-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 20px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+/* Extra small mobiles (<400px) */
+@media (max-width: 400px) {
+   .features-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-card {
+    padding: 14px 12px;
+  }
+  .feature-card b {
+    font-size: 13px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .card-image {
+    max-width: 140px;
+    max-height: 80px;
+  }
+  .card-back-image {
+    max-height: 90px;
+  }
+  .toggle-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    bottom: 14px;
+    right: 14px;
+  }
+}

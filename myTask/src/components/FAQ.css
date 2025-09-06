@@ -1,0 +1,150 @@
+.faq-section {
+  background: #f9f9f9; /* consistent background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-heading {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #202124;
+}
+
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a73e8; /* blue links */
+  cursor: pointer;
+}
+
+.faq-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5f6368;
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* ✅ Responsive Design */
+/* ========================= */
+
+/* Large screens / small laptops (<1200px) */
+@media (max-width: 1200px) {
+  .faq-section {
+    padding: 55px 20px;
+  }
+  .faq-heading {
+    font-size: 25px;
+  }
+  .faq-question {
+    font-size: 14.8px;
+  }
+  .faq-icon {
+    font-size: 19px;
+  }
+  .faq-answer {
+    font-size: 13.8px;
+  }
+}
+
+/* Medium screens / tablets (<992px) */
+@media (max-width: 992px) {
+  .faq-section {
+    padding: 50px 18px;
+  }
+  .faq-heading {
+    font-size: 24px;
+  }
+  .faq-question {
+    font-size: 14.5px;
+  }
+  .faq-icon {
+    font-size: 18.5px;
+  }
+  .faq-answer {
+    font-size: 13.5px;
+  }
+}
+
+/* Tablets / large mobiles (<768px) */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 40px 15px;
+  }
+  .faq-heading {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .faq-question {
+    font-size: 14px;
+  }
+  .faq-icon {
+    font-size: 18px;
+  }
+  .faq-answer {
+    font-size: 13px;
+  }
+}
+
+/* Small mobiles (<600px) */
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 35px 12px;
+  }
+  .faq-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .faq-list {
+    max-width: 100%;
+  }
+  .faq-question {
+    font-size: 13px;
+  }
+  .faq-icon {
+    font-size: 16px;
+  }
+  .faq-answer {
+    font-size: 12.5px;
+  }
+}
+
+/* Extra small mobiles (<400px) */
+@media (max-width: 400px) {
+  .faq-section {
+    padding: 30px 10px;
+  }
+  .faq-heading {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .faq-question {
+    font-size: 12.5px;
+  }
+  .faq-icon {
+    font-size: 15px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
+}

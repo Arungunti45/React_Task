@@ -1,0 +1,150 @@
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.feature-card {
+  position: relative;
+  border-radius: 20px;
+  background: #d3b370;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-cards {
+  position: relative;
+  border-radius: 20px;
+  background: #fefefc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 65vh;
+}
+
+.feature-card:hover,
+.feature-cards:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.toggle-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #1558b0;
+}
+
+/* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+/* Large screens / small laptops (<1200px) */
+@media (max-width: 1200px) {
+  .features-container {
+    gap: 35px;
+  }
+  .feature-card,
+  .feature-cards {
+    max-width: 360px;
+    padding: 18px;
+  }
+  .toggle-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
+  }
+}
+
+/* Tablets / Medium screens (<992px) */
+@media (max-width: 992px) {
+  .features-container {
+    gap: 30px;
+  }
+  .feature-card,
+  .feature-cards {
+    max-width: 320px;
+    padding: 16px;
+  }
+  .toggle-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Large mobiles / small tablets (<768px) */
+@media (max-width: 768px) {
+  .features-container {
+    gap: 20px;
+  }
+  .feature-card,
+  .feature-cards {
+    max-width: 280px;
+    padding: 14px;
+  }
+  .toggle-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+}
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  .features-container {
+    gap: 15px;
+  }
+  .feature-card,
+  .feature-cards {
+    max-width: 240px;
+    padding: 12px;
+  }
+  .toggle-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+/* Extra small mobiles (<400px) */
+@media (max-width: 400px) {
+  .features-container {
+    gap: 12px;
+  }
+  .feature-card,
+  .feature-cards {
+    max-width: 200px;
+    padding: 10px;
+  }
+  .toggle-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+}

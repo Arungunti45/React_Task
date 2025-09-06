@@ -1,0 +1,145 @@
+.chrome-navbar {
+  height: 56px;
+  z-index: 1040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+/* Logo */
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Brand text */
+.brand-text {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links .nav-item {
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-item:hover {
+  color: #0070f3;
+}
+
+/* Second navbar styling */
+.second-navbar .nav-item {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.second-navbar .nav-item:hover {
+  color: #61dafb;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Large screens / laptops (<1200px) */
+@media (max-width: 1200px) {
+  .chrome-navbar {
+    padding: 0 1.8rem;
+  }
+  .brand-text {
+    font-size: 1.15rem;
+  }
+  .nav-links {
+    gap: 1.2rem;
+  }
+}
+
+/* Medium screens / tablets (<992px) */
+@media (max-width: 992px) {
+  .chrome-navbar {
+    padding: 0 1.5rem;
+  }
+  .brand-text {
+    font-size: 1.1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+/* Large mobiles / small tablets (<768px) */
+@media (max-width: 768px) {
+  .chrome-navbar {
+    padding: 0 1rem;
+    height: 50px;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  .brand-text {
+    font-size: 1rem;
+  }
+  .nav-links {
+    gap: 0.8rem;
+  }
+  .nav-links .nav-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  .chrome-navbar {
+    padding: 0 0.8rem;
+    height: 48px;
+  }
+  .logo {
+    width: 18px;
+    height: 18px;
+  }
+  .brand-text {
+    font-size: 0.95rem;
+  }
+  .nav-links {
+    gap: 0.6rem;
+  }
+  .nav-links .nav-item {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small mobiles (<400px) */
+@media (max-width: 400px) {
+  .chrome-navbar {
+    padding: 0 0.5rem;
+    height: 45px;
+  }
+  .logo {
+    width: 16px;
+    height: 16px;
+  }
+  .brand-text {
+    font-size: 0.9rem;
+  }
+  .nav-links {
+    gap: 0.5rem;
+  }
+  .nav-links .nav-item {
+    font-size: 0.8rem;
+  }
+}

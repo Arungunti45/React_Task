@@ -1,0 +1,180 @@
+/* Container */
+.chrome-container {
+  background-color: #1976f2; /* Chrome's blue */
+  border-radius: 20px;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 20px;
+  gap: 20px; /* space between content and QR */
+}
+
+/* Content (Text + Button) */
+.chrome-content {
+  max-width: 60%;
+}
+
+.chrome-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.chrome-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Button */
+.chrome-btn {
+  background-color: white;
+  color: #1976f2;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chrome-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* QR Section */
+.chrome-qr {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  color: black;
+  flex-shrink: 0; /* avoid shrinking on smaller screens */
+}
+
+.chrome-qr img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.chrome-qr p {
+  font-size: 14px;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Large screens (laptops / desktops < 1200px) */
+@media (max-width: 1200px) {
+  .chrome-container {
+    padding: 50px 35px;
+    gap: 15px;
+  }
+  .chrome-title {
+    font-size: 42px;
+  }
+  .chrome-subtitle {
+    font-size: 17px;
+  }
+  .chrome-qr img {
+    width: 140px;
+  }
+}
+
+/* Tablets (medium screens < 992px) */
+@media (max-width: 992px) {
+  .chrome-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .chrome-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .chrome-title {
+    font-size: 36px;
+  }
+
+  .chrome-subtitle {
+    font-size: 16px;
+  }
+
+  .chrome-btn {
+    font-size: 17px;
+    padding: 11px 28px;
+  }
+
+  .chrome-qr img {
+    width: 120px;
+  }
+}
+
+/* Large mobiles (small tablets / phablets < 768px) */
+@media (max-width: 768px) {
+  .chrome-title {
+    font-size: 32px;
+  }
+
+  .chrome-subtitle {
+    font-size: 15px;
+  }
+
+  .chrome-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .chrome-qr img {
+    width: 110px;
+  }
+}
+
+/* Mobile (small devices < 600px) */
+@media (max-width: 600px) {
+  .chrome-title {
+    font-size: 28px;
+  }
+
+  .chrome-subtitle {
+    font-size: 14px;
+  }
+
+  .chrome-btn {
+    font-size: 15px;
+    padding: 9px 22px;
+  }
+
+  .chrome-qr img {
+    width: 100px;
+  }
+}
+
+/* Extra small mobiles < 400px */
+@media (max-width: 400px) {
+  .chrome-title {
+    font-size: 24px;
+  }
+
+  .chrome-subtitle {
+    font-size: 13px;
+  }
+
+  .chrome-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .chrome-qr img {
+    width: 90px;
+  }
+
+  .chrome-container {
+    padding: 30px 15px;
+  }
+}

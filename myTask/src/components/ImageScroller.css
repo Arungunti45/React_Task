@@ -1,0 +1,82 @@
+.scroller-image {
+  border-radius: 1rem;
+  object-fit: contain;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+/* Large image (first one) */
+.scroller-image.large {
+  width: 90%;
+  height: 90%;
+}
+
+/* Smaller images */
+.scroller-image.small {
+  width: 50%;
+  height: 50%;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Large screens / laptops (<1200px) */
+@media (max-width: 1200px) {
+  .scroller-image.large {
+    width: 85%;
+    height: 85%;
+  }
+  .scroller-image.small {
+    width: 45%;
+    height: 45%;
+  }
+}
+
+/* Medium screens / tablets (<992px) */
+@media (max-width: 992px) {
+  .scroller-image.large {
+    width: 80%;
+    height: 80%;
+  }
+  .scroller-image.small {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+/* Large mobiles / small tablets (<768px) */
+@media (max-width: 768px) {
+  .scroller-image.large {
+    width: 75%;
+    height: 75%;
+  }
+  .scroller-image.small {
+    width: 35%;
+    height: 35%;
+  }
+}
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  .scroller-image.large {
+    width: 70%;
+    height: 70%;
+  }
+  .scroller-image.small {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+/* Extra small mobiles (<400px) */
+@media (max-width: 400px) {
+  .scroller-image.large {
+    width: 65%;
+    height: 65%;
+  }
+  .scroller-image.small {
+    width: 28%;
+    height: 28%;
+  }
+}

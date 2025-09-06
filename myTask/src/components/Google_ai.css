@@ -1,0 +1,158 @@
+/* Container */
+.ai-container {
+  background-color: #f8f6ddff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 90px 90px;
+  max-width: 100%;
+}
+
+/* Text Content Layout */
+.ai-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Left side text */
+.ai-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.ai-subtitle {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.ai-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Right side description */
+.ai-description {
+  flex: 2;
+  min-width: 300px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ai-link {
+  color: #1a73e8;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Image */
+.ai-image-wrapper {
+  max-width: 700px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ai-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Large screens / laptops (<1200px) */
+@media (max-width: 1200px) {
+  .ai-container {
+    margin: 70px 60px;
+    padding: 35px;
+  }
+  .ai-title {
+    font-size: 26px;
+  }
+  .ai-description {
+    font-size: 15.5px;
+  }
+}
+
+/* Medium screens / tablets (<992px) */
+@media (max-width: 992px) {
+  .ai-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .ai-title {
+    font-size: 24px;
+  }
+  .ai-description {
+    font-size: 15px;
+  }
+  .ai-container {
+    margin: 50px 40px;
+    padding: 30px;
+  }
+}
+
+/* Large mobiles / small tablets (<768px) */
+@media (max-width: 768px) {
+  .ai-container {
+    margin: 40px 30px;
+    padding: 25px;
+  }
+  .ai-title {
+    font-size: 22px;
+  }
+  .ai-description {
+    font-size: 14.5px;
+  }
+  .ai-image-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  .ai-container {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+  .ai-title {
+    font-size: 20px;
+  }
+  .ai-description {
+    font-size: 14px;
+  }
+  .ai-image-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* Extra small mobiles (<400px) */
+@media (max-width: 400px) {
+  .ai-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  .ai-title {
+    font-size: 18px;
+  }
+  .ai-description {
+    font-size: 13px;
+  }
+  .ai-subtitle {
+    font-size: 13px;
+  }
+}
