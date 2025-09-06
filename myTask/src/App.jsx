@@ -1,17 +1,16 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, useLocation } from 'react-router-dom'
-
-// import ChromeNavbar from './components/ChromeNavbar'  // Updated navbar
 import ChromeNavbar from './components/Navbar'  // Updated navbar
 
 import HeroSection from './components/HeroSection'
 import FeatureSection from './components/FeatureSection'
 import UpdatesSection from './components/UpdateSection'
 import UpdatesSlider from './components/UpdateSlider'
-import ImageScroller from './components/ImageScroller' 
+import ImageScroller from './components/ImageScroller'
 import SafeBrowsing from './components/SafeBrowse'
 import ExtendExperience from './components/ExtendExperience'
-import ChromeCarousel from './components/Chromecarousel'  
+import ChromeCarousel from "./components/ChromeCarousel";
+
 import Gooogle_ai from './components/Gooogle_ai'
 import ChromeDownload from './components/ChromeDownload'
 import FAQ from './components/FAQ'
