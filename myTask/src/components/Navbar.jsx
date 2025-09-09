@@ -36,7 +36,7 @@ export default function ChromeNavbar() {
               <Link to="/by-google" className="nav-link">By Google</Link>
             </li>
             <li className="nav-item d-flex align-items-center gap-1">
-              <Link to="/extensions" className="nav-link d-flex align-items-center gap-1">
+              <Link to="https://chromewebstore.google.com/category/extensions?pli=1" className="nav-link d-flex align-items-center gap-1">
                 Extensions <ArrowUpRight size={14} strokeWidth={2} />
               </Link>
             </li>
@@ -62,13 +62,13 @@ export default function ChromeNavbar() {
               <Link to="/updates-slider" className="nav-link text-black">Updates</Link>
             </li>
             <li className="nav-item text-black">
-              <Link to="/yours" className="nav-link text-black">Yours</Link>
+              <Link to="/ExtendExperience.jsx" className="nav-link text-black">Yours</Link>
             </li>
             <li className="nav-item text-black">
               <Link to="/safe-browsing" className="nav-link text-black">Safe</Link>
             </li>
             <li className="nav-item text-black">
-              <Link to="/Google ai" className="nav-link text-black">By Google</Link>
+              <Link to="/Google ai" className="nav-link text-black">ByGoogle</Link>
             </li>
             <li className="nav-item bg-primary text-white px-3 py-1 rounded">
               <a

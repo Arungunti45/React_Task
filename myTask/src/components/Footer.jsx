@@ -18,7 +18,6 @@ export default function Footer() {
 
       <hr />
 
-      {/* Footer Links */}
       <div className="footer-links">
         <div>
           <h4>Chrome Family</h4>
@@ -64,7 +63,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="bottom-footer">
         <span>Google</span>
         <a href="#">Privacy and Terms</a>

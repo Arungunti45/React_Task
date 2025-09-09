@@ -7,7 +7,6 @@ export default function Features() {
 
   return (
     <div className="features-container">
-      {/* Card 1 */}
       <div className="feature-card">
         <span style={{ color: "#D3D3D3" ,paddingLeft:"0px"}}>GOOGLE SEARCH</span><br />
         <b>The search bar you love,built right in.</b>
@@ -29,7 +28,6 @@ export default function Features() {
         </button>
       </div>
 
-      {/* Card 2 */}
       <div className="feature-cards">
          <span style={{ color: "gray" ,paddingLeft:"0px"}}>GOOGLE WORKSPACE</span><br />
         <b>Get things done, with or without Wi-Fi.</b>

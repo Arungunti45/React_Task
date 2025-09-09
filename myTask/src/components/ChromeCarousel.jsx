@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaTachometerAlt } from "react-icons/fa"; // Speedometer icon
+import { FaTachometerAlt } from "react-icons/fa"; 
 import "./ChromeCarousel.css";
 
 const slides = [
@@ -30,7 +30,6 @@ export default function ChromeCarousel() {
 
   return (
     <div className="carousel-wrapper">
-      {/* Highlight OUTSIDE the images */}
       <div className="highlight-text">
         <b>
         The{" "}
@@ -42,7 +41,6 @@ export default function ChromeCarousel() {
         </b>
       </div>
 
-      {/* Carousel */}
       <div className="carousel-container">
         <div className="carousel-slide">
           {slides[current].type === "video" ? (
@@ -64,7 +62,6 @@ export default function ChromeCarousel() {
         </div>
       </div>
 
-      {/* Arrow buttons OUTSIDE below-left */}
       <div className="carousel-controls">
         <button className="carousel-btn" onClick={prevSlide}>
           {"<"}

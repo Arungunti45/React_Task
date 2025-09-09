@@ -90,6 +90,8 @@
   .feature-cards {
     max-width: 320px;
     padding: 16px;
+    height: 30vh;
+
   }
   .toggle-btn {
     width: 40px;
@@ -103,10 +105,13 @@
   .features-container {
     gap: 20px;
   }
-  .feature-card,
+  /* .feature-card, */
   .feature-cards {
     max-width: 280px;
     padding: 14px;
+    margin-left: 55px;
+    height: 30vh;
+
   }
   .toggle-btn {
     width: 38px;

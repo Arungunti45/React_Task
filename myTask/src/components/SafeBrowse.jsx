@@ -16,7 +16,6 @@ const cards = [
   {
     label: "SAFETY CHECK",
     frontTitle: "Check your safety level in real time with just one click.",
-    // frontImage: "/path-to-small-front-image2.png",
     backTitle: "Safety check ran a moment ago",
     backDescription: `Chrome’s Safety Check confirms the overall security and privacy of your browsing experience, including your saved passwords, extensions and settings. If something needs attention.`,
     backImage: "https://www.google.com/chrome/static/images/v2/gallery/safety-check-2x.webp",

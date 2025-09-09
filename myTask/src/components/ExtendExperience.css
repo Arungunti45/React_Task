@@ -95,6 +95,9 @@
     padding: 40px;
     gap: 35px;
   }
+  .extend-image{
+    height: 50vh;
+  }
   .extend-text h2 {
     font-size: 26px;
   }
@@ -113,6 +116,9 @@
     flex-direction: column;
     padding: 35px 25px;
     gap: 30px;
+  }
+  .extend-image{
+    height: 50vh;
   }
   .extend-text {
     text-align: center;
@@ -142,6 +148,9 @@
   .extend-text h2 {
     font-size: 22px;
   }
+  .extend-image{
+    height: 53vh;
+  }
   .extend-text p {
     font-size: 14px;
   }
@@ -163,6 +172,9 @@
   .extend-container {
     padding: 25px 15px;
     gap: 20px;
+  }
+    .extend-image{
+    height: 53vh;
   }
   .extend-text h2 {
     font-size: 20px;

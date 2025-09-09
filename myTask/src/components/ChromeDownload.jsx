@@ -1,6 +1,5 @@
 import React from "react";
 import "./ChromeDownload.css";
-// import qrCode from "./chrome-qr.png"; // place your QR image inside `src/`
 
 export default function ChromeDownload() {
   return (

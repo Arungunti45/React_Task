@@ -21,7 +21,6 @@ export default function ExtendExperience() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // icons with custom colors
   const icons = [
     { component: FaShoppingBag, color: "#ff6f61" }, // red-orange
     { component: FaClipboard, color: "#0078ff" },   // blue
@@ -32,18 +31,15 @@ export default function ExtendExperience() {
 
   return (
     <div className="extend-container">
-      {/* Left Text */}
       <div className="extend-text">
         <h2>Extend your experience</h2>
         <p>
           From shopping and entertainment to productivity,<br /> find extensions to
           improve your experience in the <br />Chrome Web Store.
         </p>
-        {/* <button className="extend-btn">Explore extensions →</button> */}
         <a href="https://chromewebstore.google.com/category/extensions?pli=1" className="extend-btn">Explore extensions →</a>
       </div>
 
-      {/* Right Image with Circular Icons */}
       <div className="extend-image-container">
         <img
           src="https://www.google.com/chrome/static/images/dev-components/chrome-gallery-5.webp"
@@ -57,11 +53,11 @@ export default function ExtendExperience() {
               key={i}
               className="circle-icon"
               style={{
-                transform: `rotate(${i * (360 / icons.length)}deg) 
+                transform: `rotate(${i * (360 / icons.length)}deg)
                             translate(160px) 
                             rotate(-${i * (360 / icons.length)}deg) 
                             scale(${1 + scrollY})`,
-                color: color,   // 🎨 icon color
+                color: color,
               }}
             >
               <Icon />
